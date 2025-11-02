@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dr. Nawal Shrestha — Researcher</title>
+  <meta name="description" content="Academic profile and publications of Dr. Nawal Shrestha">
+  <style>
+    :root{
+      --accent:#1b4332; /* deep green */
+      --accent-2:#2d6a4f;
+      --muted:#556;
+      --card-bg:#ffffff;
+      --max-w:1000px;
+      --radius:14px;
+      --glass: rgba(255,255,255,0.85);
+      --shadow: 0 6px 18px rgba(8,15,23,0.08);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#f6fbf8, #eef7f2);color:#0c1a15;line-height:1.5}
+
+    /* Container */
+    .wrap{max-width:var(--max-w);margin:28px auto;padding:20px}
+
+    /* Header */
+    header.site-header{display:flex;align-items:center;gap:18px;padding:18px;border-radius:16px;background:linear-gradient(90deg,var(--glass), rgba(255,255,255,0.95));box-shadow:var(--shadow)}
+    .avatar{flex:0 0 120px;height:120px;border-radius:12px;overflow:hidden;border:4px solid rgba(255,255,255,0.6)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .title{flex:1}
+    .title h1{margin:0;font-size:1.6rem}
+    .title p.subtitle{margin:6px 0 0;color:var(--muted)}
+    .contact{display:flex;gap:8px;align-items:center;margin-top:8px}
+    .pill{padding:8px 12px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+
+    /* Nav */
+    nav.main-nav{display:flex;justify-content:center;margin:18px 0}
+    nav.main-nav a{margin:0 12px;color:var(--accent-2);text-decoration:none;font-weight:600}
+    nav.main-nav a:hover{text-decoration:underline}
+
+    /* Hero banner */
+    .hero{border-radius:12px;overflow:hidden;margin-bottom:18px;box-shadow:var(--shadow)}
+    .hero .banner{width:100%;height:200px;background-image:linear-gradient(180deg, rgba(27,67,50,0.45), rgba(27,67,50,0.15)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=60');background-size:cover;background-position:center;display:flex;align-items:center;padding:28px;color:white}
+    .hero h2{margin:0;font-size:1.4rem}
+
+    /* Two-column grid */
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+
+    /* Card */
+    .card{background:var(--card-bg);padding:16px;border-radius:12px;box-shadow:var(--shadow)}
+    .card h3{margin-top:0}
+
+    /* Publications */
+    .pub-list{list-style:none;padding:0;margin:0}
+    .pub-item{padding:12px;border-radius:10px;border:1px solid #eef4ee;margin-bottom:10px}
+    .pub-item a{font-weight:600;color:var(--accent-2);text-decoration:none}
+    .pub-meta{color:var(--muted);font-size:0.92rem;margin-top:6px}
+
+    /* Sidebar */
+    .sidebar .meta-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #f0f3ef}
+    .sidebar .meta-row:last-child{border-bottom:none}
+
+    /* Contact form simplified */
+    form .row{display:flex;gap:8px;margin-bottom:8px}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #ddeee2;font-size:0.95rem}
+    button{border:0;padding:10px 14px;border-radius:10px;background:var(--accent-2);color:#fff;font-weight:700;cursor:pointer}
+
+    /* Footer */
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.95rem}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr}
+      .avatar{flex:0 0 88px;height:88px}
+      .hero .banner{height:160px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <div class="avatar" aria-hidden>
+        <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Profile photo">
+      </div>
+      <div class="title">
+        <h1>Dr. Nawal Shrestha, PhD</h1>
+        <p class="subtitle">Assistant Professor — Department of Agriculture, Kathmandu University</p>
+        <div class="contact">
+          <a class="pill" href="mailto:nawal.shrestha@ku.edu.np">nawal.shrestha@ku.edu.np</a>
+          <a class="pill" href="#publications">Publications</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero card">
+      <div class="banner">
+        <div>
+          <h2>Macroecology, plant systematics, and conservation under global change</h2>
+          <p style="opacity:0.95;margin-top:8px;max-width:720px">My research focuses on large-scale patterns of plant diversity, the drivers of species richness, and translating ecological knowledge into conservation planning under climate and human footprint change.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <main>
+        <section id="about" class="card">
+          <h3>About</h3>
+          <p>Dr. Nawal Shrestha (PhD, Institute of Botany, Chinese Academy of Sciences, 2015) is an Assistant Professor at Kathmandu University. He has held postdoctoral positions at Peking University and research positions at Harvard University and Lanzhou University. His work blends phylogenetics, macroecology, and spatial conservation prioritisation.</p>
+          <p><strong>Selected roles:</strong> Researcher (Harvard University), Young Researcher (Lanzhou University), Postdoc (Peking University).</p>
+        </section>
+
+        <section id="research" class="card" style="margin-top:16px">
+          <h3>Research interests</h3>
+          <ul>
+            <li>Plant systematics and macroevolution</li>
+            <li>Macroecology of plant diversity and drivers of species richness</li>
+            <li>Conservation planning under climate &amp; human footprint change</li>
+            <li>Species distribution modelling and vulnerability assessment</li>
+          </ul>
+        </section>
+
+        <section id="publications" class="card" style="margin-top:16px">
+          <h3>Selected publications</h3>
+          <ul class="pub-list">
+            <li class="pub-item">
+              <div><a href="#" target="_blank">Vulnerabilities of protected lands in the face of climate and human footprint changes</a></div>
+              <div class="pub-meta">Shrestha N., Xu X., Meng J., Wang Z. — Nature Communications (2021)</div>
+            </li>
+            <li class="pub-item">
+              <div><a href="#" target="_blank">Spatial patterns, underlying drivers and conservation priorities of orchids in the central Himalaya</a></div>
+              <div class="pub-meta">Koju L., Shrestha N., et al. — Biological Conservation (2023)</div>
+            </li>
+            <li class="pub-item">
+              <div><a href="#" target="_blank">A comprehensive county-level distribution database of alien and invasive plants in China</a></div>
+              <div class="pub-meta">Yang Y., Liu X., Wu J., Svenning J.C., Liu J., Shrestha N. (2025) — Ecology</div>
+            </li>
+          </ul>
+          <p style="margin-top:12px;color:var(--muted)">Want a full publications list? Replace or expand the items above with your BibTeX or a generated HTML list.</p>
+        </section>
+
+        <section id="cv" class="card" style="margin-top:16px">
+          <h3>CV &amp; Downloads</h3>
+          <p>Download: <a href="#" download="Nawal_Shrestha_CV.pdf">Curriculum Vitae (PDF)</a></p>
+          <p style="color:var(--muted)">Tip: upload your CV to the repository (or an assets folder) and update the link above.</p>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <div class="card" style="margin-bottom:18px">
+          <h3>Contact</h3>
+          <div class="meta-row"><div>Email</div><div><a href="mailto:nawal.shrestha@ku.edu.np">nawal.shrestha@ku.edu.np</a></div></div>
+          <div class="meta-row"><div>Affiliation</div><div>Kathmandu University, Dhulikhel</div></div>
+          <div class="meta-row"><div>Research areas</div><div>Macroecology · Conservation · Plant systematics</div></div>
+        </div>
+
+        <div class="card">
+          <h3>Quick bio</h3>
+          <p>PhD (2015) — Institute of Botany, Chinese Academy of Sciences. Former postdoc at Peking University and researcher at Harvard University. Focus on biodiversity patterns and conservation in Asia.</p>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>Send a message</h3>
+          <form id="contactForm" onsubmit="alert('This demo form does not send emails. Replace with Formspree or a server endpoint.');return false;">
+            <div class="row"><input type="text" placeholder="Your name" required></div>
+            <div class="row"><input type="email" placeholder="Your email" required></div>
+            <div class="row"><textarea rows="4" placeholder="Message"></textarea></div>
+            <div class="row"><button type="submit">Send</button></div>
+          </form>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+      <p>© <span id="year"></span> Dr. Nawal Shrestha — Built with HTML • Adapted for GitHub Pages</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
